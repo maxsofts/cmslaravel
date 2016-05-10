@@ -1,3 +1,5 @@
+#Demo quản trị nội dung bằng Laravel PHP Framework
+
 Đây là phần demo sử dụng laravel xây dựng sẵn phần quản trị nôi dung
 
 Cách thức cài đặt.
