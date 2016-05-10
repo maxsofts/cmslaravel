@@ -1,13 +1,24 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "maxsofts/cmslaravel",
+    "description": "Đây là phần laravel xây dựng sẵn để ứng dụng làm web quản trị nội dung gôm có Admin quản lý và giao diện cơ bản",
+    "keywords": ["framework", "laravel","maxsoft",","],
     "license": "MIT",
     "type": "project",
     "require": {
         "php": ">=5.5.9",
-        "laravel/framework": "5.2.*"
+        "laravel/framework": "5.2.*",
+        "maxsofts/module-assets" : "0.1.*"
     },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/maxsofts/module-assets"
+        }
+        {
+            "type": "git",
+            "url": "https://github.com/maxsofts/cmslaravel"
+        }
+    ],
     "require-dev": {
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",

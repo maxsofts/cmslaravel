@@ -1,3 +1,16 @@
+Đây là phần demo sử dụng laravel xây dựng sẵn phần quản trị nôi dung
+
+Cách thức cài đặt.
+
+[Download](https://github.com/maxsofts/cmslaravel/archive/master.zip) source về máy giải nén
+
+chạy lệnh ```composer update``` để sử dụng
+
+#
+
+
+
+
 # Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
