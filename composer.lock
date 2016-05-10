@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c284a9c122da36c99a8b6597bdce7aa6",
-    "content-hash": "8b1485987e7c5949da82435d403e52e8",
+    "hash": "64470f8af0359a1c21d2dc766075db46",
+    "content-hash": "def908d54a9508a0c1ecbc4a05c0aa57",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -517,6 +517,52 @@
                 "storage"
             ],
             "time": "2016-04-28 06:53:12"
+        },
+        {
+            "name": "maxsofts/maxassets",
+            "version": "v0.1.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maxsofts/module-assets",
+                "reference": "524827e3b50a8308d7ff13be842500e6fc3a62d1"
+            },
+            "require": {
+                "illuminate/support": "~5.1",
+                "php": "~5.5|~7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1",
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "maxsofts\\maxcms\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "maxsofts\\maxcms\\": "tests"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": ":Tran Xuan Duc",
+                    "email": ":ductranxuan.29710@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": ":This is my example for packager laravel",
+            "homepage": "https://github.com/maxsofts/module-asset",
+            "keywords": [
+                "maxassets",
+                "maxsofts"
+            ],
+            "time": "2016-05-10 02:51:11"
         },
         {
             "name": "monolog/monolog",
