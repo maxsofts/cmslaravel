@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "64470f8af0359a1c21d2dc766075db46",
-    "content-hash": "def908d54a9508a0c1ecbc4a05c0aa57",
+    "hash": "626ee7b653c50dcf1e3b371c64092152",
+    "content-hash": "7e54f95982243481aa5e276049986dea",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -436,6 +436,60 @@
             "time": "2016-04-27 13:02:09"
         },
         {
+            "name": "laravelcollective/html",
+            "version": "v5.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LaravelCollective/html.git",
+                "reference": "3a312d39ffe37da0f57b602618b61fd07c1fcec5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/3a312d39ffe37da0f57b602618b61fd07c1fcec5",
+                "reference": "3a312d39ffe37da0f57b602618b61fd07c1fcec5",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "5.2.*",
+                "illuminate/routing": "5.2.*",
+                "illuminate/session": "5.2.*",
+                "illuminate/support": "5.2.*",
+                "illuminate/view": "5.2.*",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "illuminate/database": "5.2.*",
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Collective\\Html\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                },
+                {
+                    "name": "Adam Engebretson",
+                    "email": "adam@laravelcollective.com"
+                }
+            ],
+            "description": "HTML and Form Builders for the Laravel Framework",
+            "homepage": "http://laravelcollective.com",
+            "time": "2016-01-27 22:29:54"
+        },
+        {
             "name": "league/flysystem",
             "version": "1.0.22",
             "source": {
@@ -520,11 +574,11 @@
         },
         {
             "name": "maxsofts/maxassets",
-            "version": "v0.1.10",
+            "version": "v0.1.11",
             "source": {
                 "type": "git",
-                "url": "https://github.com/maxsofts/module-assets",
-                "reference": "524827e3b50a8308d7ff13be842500e6fc3a62d1"
+                "url": "https://github.com/maxsofts/maxassets",
+                "reference": "37924a431012c75b83bbcb83af968c3fe69cecb7"
             },
             "require": {
                 "illuminate/support": "~5.1",
@@ -538,12 +592,12 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "maxsofts\\maxcms\\": "src"
+                    "maxsofts\\maxassets\\": "src"
                 }
             },
             "autoload-dev": {
                 "psr-4": {
-                    "maxsofts\\maxcms\\": "tests"
+                    "maxsofts\\maxassets\\": "tests"
                 }
             },
             "license": [
@@ -557,12 +611,12 @@
                 }
             ],
             "description": ":This is my example for packager laravel",
-            "homepage": "https://github.com/maxsofts/module-asset",
+            "homepage": "https://github.com/maxsofts/maxassets",
             "keywords": [
                 "maxassets",
                 "maxsofts"
             ],
-            "time": "2016-05-10 02:51:11"
+            "time": "2016-05-10 03:47:02"
         },
         {
             "name": "monolog/monolog",
