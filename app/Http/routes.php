@@ -14,7 +14,23 @@
 Route::get('/', function () {
     return view('welcome');
 });
+<<<<<<< HEAD
+Route::get('home',"HomeController@index" );
+
+Route::auth();
+
+/*
+ * Admin Router Group
+ */
+Route::group(['prefix' => 'admin' , 'middleware' => 'auth', 'middleware' => 'permission'], function () {
+
+    Route::get('/', 'AdminController@index');
+
+    Route::get('user/profile', 'UserController@profile');
+});
+=======
 
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+>>>>>>> master

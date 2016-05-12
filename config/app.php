@@ -161,6 +161,10 @@ return [
          * Maxsoft providers
          */
         \maxsofts\maxassets\MaxAssetsServiceProvider::class
+<<<<<<< HEAD
+
+=======
+>>>>>>> master
     ],
 
     /*
