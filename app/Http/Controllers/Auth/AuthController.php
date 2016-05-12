@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use App\user_usergroup_map;
+use Illuminate\Support\Facades\Config;
 use Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
@@ -63,10 +65,25 @@ class AuthController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+
+        $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
+
+        /*
+         * Get Config setting group register
+         */
+        $config = Config::get('maxcms.core.user.default_setting');
+
+        $user_map = new user_usergroup_map();
+
+        $user_map->create([
+            'user_id'=> $user->getQueueableId(),
+            'group_id' => $config['register_group']
+        ]);
+
+        return $user;
     }
 }

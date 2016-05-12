@@ -17,9 +17,27 @@ class CreateUsergroupsTable extends Migration
             $table->integer('parent_id');
             $table->integer('lft')->comment = "Nested set left.";
             $table->integer('rgt')->comment = "Nested set right.";
-            $table->string('title',100);
-            $table->timestamps();
+            $table->string('title', 100);
         });
+
+        DB::table('usergroups')->insert(
+            [
+                'parent_id' => 0,
+                'title' => "Public"
+            ]
+        );
+        DB::table('usergroups')->insert(
+            [
+                'parent_id' => 1,
+                'title' => "Register"
+            ]
+        );
+        DB::table('usergroups')->insert(
+            [
+                'parent_id' => 1,
+                'title' => "Admin"
+            ]
+        );
     }
 
     /**

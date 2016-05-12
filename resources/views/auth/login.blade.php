@@ -4,7 +4,7 @@
     {!! Form::open(['url' => 'login']) !!}
         <h1>Login Form</h1>
 
-        <div>
+        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
             {!! Form::email('email', old('email'), array('class'=>"form-control" ,'placeholder' => 'Email' ,'require'=>'required')) !!}
             @if ($errors->has('email'))
                 <span class="help-block">
@@ -12,7 +12,7 @@
                 </span>
             @endif
         </div>
-        <div>
+        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
             {!! Form::password('password', array('class' => 'form-control','placeholder' => 'Password' ,'require'=>'required')) !!}
             @if ($errors->has('password'))
                 <span class="help-block">
