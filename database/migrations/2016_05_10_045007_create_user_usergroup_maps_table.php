@@ -13,6 +13,7 @@ class CreateUserUsergroupMapsTable extends Migration
     public function up()
     {
         Schema::create('user_usergroup_maps', function (Blueprint $table) {
+<<<<<<< HEAD
             $table->integer('user_id')->unsigned()->index()->comment = "Foreign Key to Users";
             $table->integer('group_id')->unsigned()->index()->comment = "Foreign Key to User Group";
         });
@@ -20,6 +21,15 @@ class CreateUserUsergroupMapsTable extends Migration
         Schema::table('user_usergroup_maps',function($table){
             $table->foreign('user_id')->references('id')->on('users');
             $table->foreign('group_id')->references('id')->on('usergroups');
+=======
+            $table->integer('user_id')->unsigned()->nullable()->index()->comment = "Foreign Key to Users.";
+            $table->integer('group_id')->unsigned()->nullable()->index()->comment = "Foreign Key to User Group.";
+        });
+
+        Schema::table('user_usergroup_maps',function($table){
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('group_id')->references('id')->on('usergroups')->onDelete('cascade');
+>>>>>>> origin/ducsatthu
         });
     }
 

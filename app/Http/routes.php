@@ -18,3 +18,14 @@ Route::get('/', function () {
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+
+/*
+ * Admin Router Group
+ */
+Route::group(['prefix' => 'admin' , 'middleware' => 'auth', 'middleware' => 'permission'], function () {
+
+    Route::get('/', 'AdminController@index');
+
+    Route::get('user/profile', 'UserController@profile');
+});

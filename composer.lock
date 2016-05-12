@@ -577,7 +577,11 @@
             "version": "v0.1.11",
             "source": {
                 "type": "git",
+<<<<<<< HEAD
                 "url": "https://github.com/maxsofts/maxassets",
+=======
+                "url": "https://github.com/maxsofts/module-assets",
+>>>>>>> origin/ducsatthu
                 "reference": "37924a431012c75b83bbcb83af968c3fe69cecb7"
             },
             "require": {
