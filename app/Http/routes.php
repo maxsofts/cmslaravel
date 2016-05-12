@@ -23,7 +23,7 @@ Route::get('/home', 'HomeController@index');
 /*
  * Admin Router Group
  */
-Route::group(['prefix' => 'admin' , 'middleware' => 'auth', 'middleware' => 'permission'], function () {
+Route::group(['prefix' => 'admin' , 'middleware' => 'auth'], function () {
 
     Route::get('/', 'AdminController@index');
 

@@ -17,7 +17,8 @@ class Permission
      */
     public function handle($request, Closure $next)
     {
-        $group = user_usergroup_map::where('user_id','=',Auth::user()->id)->first();
+
+       // $group = user_usergroup_map::where('user_id','=',Auth::user()->id)->first();
 
         return $next($request);
     }
