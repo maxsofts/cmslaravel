@@ -24,9 +24,15 @@
             <br/>
 
             <div>
+<<<<<<< HEAD
                 <h1> <a href="{{Request::root()}}"><i class="fa fa-magic" style="font-size: 26px;"></i> Maxsoft.vn </a></h1>
 
                 <p>©2015 All Rights Reserved. <a href="{{Request::root()}}">Maxsoft.vn </a></p>
+=======
+                <h1><i class="fa fa-magic" style="font-size: 26px;"></i> Maxsoft.vn</h1>
+
+                <p>©2015 All Rights Reserved. Maxsoft.vn</p>
+>>>>>>> master
             </div>
         </section>
     </div>

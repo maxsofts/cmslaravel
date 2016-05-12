@@ -4,7 +4,11 @@
     {!! Form::open(['url' => 'register']) !!}
 
     <h1>Create Account</h1>
+<<<<<<< HEAD
     <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+=======
+    <div>
+>>>>>>> master
         {!! Form::text('name',null,array('class'=>"form-control" ,'placeholder' => 'Username' ,'require'=>'required')) !!}
         @if ($errors->has('name'))
             <span class="help-block">
@@ -20,7 +24,11 @@
                 </span>
         @endif
     </div>
+<<<<<<< HEAD
     <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+=======
+    <div>
+>>>>>>> master
         {!! Form::password('password', array('class' => 'form-control','placeholder' => 'Password' ,'require'=>'required')) !!}
         @if ($errors->has('password'))
             <span class="help-block">
@@ -28,7 +36,11 @@
                 </span>
         @endif
     </div>
+<<<<<<< HEAD
     <div class="form-group{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
+=======
+    <div>
+>>>>>>> master
         {!! Form::password('password_confirmation', array('class' => 'form-control','placeholder' => 'Password confirmation' ,'require'=>'required')) !!}
         @if ($errors->has('password_confirmation'))
             <span class="help-block">
@@ -46,6 +58,10 @@
             <a href="{{ url('/login') }}" class="to_register"> Log in </a>
         </p>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
     </div>
     {!! Form::close() !!}
 @endsection

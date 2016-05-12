@@ -14,6 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+<<<<<<< HEAD
 Route::get('home',"HomeController@index" );
 
 Route::auth();
@@ -27,3 +28,9 @@ Route::group(['prefix' => 'admin' , 'middleware' => 'auth', 'middleware' => 'per
 
     Route::get('user/profile', 'UserController@profile');
 });
+=======
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
+>>>>>>> master

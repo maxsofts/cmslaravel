@@ -17,6 +17,7 @@ class CreateUsergroupsTable extends Migration
             $table->integer('parent_id');
             $table->integer('lft')->comment = "Nested set left.";
             $table->integer('rgt')->comment = "Nested set right.";
+<<<<<<< HEAD
             $table->string('title', 100);
         });
 
@@ -38,6 +39,11 @@ class CreateUsergroupsTable extends Migration
                 'title' => "Admin"
             ]
         );
+=======
+            $table->string('title',100);
+            $table->timestamps();
+        });
+>>>>>>> master
     }
 
     /**

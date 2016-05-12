@@ -7,13 +7,18 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
+<<<<<<< HEAD
         "maxsofts/maxassets" : "0.1.*",
         "laravelcollective/html": "5.2.*"
+=======
+        "laravelcollective/html": "5.2.*",
+        "maxsofts/maxassets" : "0.1.*"
+>>>>>>> master
     },
     "repositories": [
         {
             "type": "git",
-            "url": "https://github.com/maxsofts/module-assets"
+            "url": "https://github.com/maxsofts/maxassets"
         }
     ],
     "require-dev": {

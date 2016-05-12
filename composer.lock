@@ -4,8 +4,13 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "hash": "88e521ecd0d79fe13ed0b9d2e5a8ebe7",
     "content-hash": "55c66a2c8bf3562bcf48b72b1673579f",
+=======
+    "hash": "626ee7b653c50dcf1e3b371c64092152",
+    "content-hash": "7e54f95982243481aa5e276049986dea",
+>>>>>>> master
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -577,7 +582,11 @@
             "version": "v0.1.11",
             "source": {
                 "type": "git",
+<<<<<<< HEAD
                 "url": "https://github.com/maxsofts/module-assets",
+=======
+                "url": "https://github.com/maxsofts/maxassets",
+>>>>>>> master
                 "reference": "37924a431012c75b83bbcb83af968c3fe69cecb7"
             },
             "require": {
