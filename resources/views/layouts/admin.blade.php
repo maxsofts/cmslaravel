@@ -6,9 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Gentallela Alela! | </title>
-
     {!! MaxRender::renderStyles(config('maxcms.core.admin.asset')) !!}
 </head>
 
@@ -20,7 +18,6 @@
                 <div class="navbar nav_title" style="border: 0;">
                     <a href="{{url('/admin')}}" class="site_title"><i class="fa fa-paw"></i> <span>Gentellela Alela!</span></a>
                 </div>
-
                 <div class="clearfix"></div>
 
                 <!-- menu profile quick info -->
@@ -51,6 +48,14 @@
                                     </li>
                                     <li><a href="index3.html">Dashboard3</a>
                                     </li>
+                                </ul>
+                            </li>
+                            <li><a><i class="fa fa-clipboard" aria-hidden="true"></i> Posts <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu" style="display: none">
+
+                                    <li><a href="{{url('admin/post/all')}}">All posts</a></li>
+                                    <li><a href="form_buttons.html">Add new post</a></li>
+
                                 </ul>
                             </li>
                             <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>

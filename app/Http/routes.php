@@ -26,6 +26,6 @@ Route::get('/home', 'HomeController@index');
 Route::group(['prefix' => 'admin' , 'middleware' => 'auth'], function () {
 
     Route::get('/', 'AdminController@index');
-
+    Route::get('post/all','PostController@edit');
     Route::get('user/profile', 'UserController@profile');
 });
