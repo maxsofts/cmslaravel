@@ -1,0 +1,14 @@
+.ck{
+    margin-right: 10px;
+}
+.i-c #delete{
+    background: red;
+    border-radius: 50%;
+    color: #FFFFFF;
+    padding: 2px;
+    margin-right: 5px;
+}
+.i-c #edit{
+    color:#F5721C;
+    margin-right: 5px;
+}
